@@ -1,0 +1,68 @@
+#app{
+	position: absolute;
+}
+
+.mainimage{
+	height:600px;
+}
+
+.iol_p, .iol_n {
+	height: 25px;
+	position: absolute;
+	height: 25px;
+	top:300px;
+}
+
+
+.insights {
+	max-width: 900px;
+    min-width: 900px;
+    position: absolute;
+}
+
+.insights img {
+	height: 150px;
+    width: 150px;
+    margin: 3px;
+}
+
+.seemore{	
+    display: block;
+    left: 45%;
+    position: absolute;
+}
+
+.pagesincluding a{
+	display: inline-block;
+    margin: 3px;
+    max-width: 400px;
+    min-width: 400px;
+    background-color: #eee;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#icon{
+	height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+#icon:hover{
+	cursor: pointer;
+}
+
+.annotations{
+	display: block;
+	margin-top: 10px;
+}
+
+.annotations > a {
+	background-color: #bbb;
+    padding: 7px;
+    margin-right: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    color: #444;
+}

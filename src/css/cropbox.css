@@ -1,0 +1,315 @@
+.cropRect,
+.cropRect .left,
+.cropRect .right,
+.cropRect .top,
+.cropRect .bottom,
+.cropRect .leftTop,
+.cropRect .rightTop,
+.cropRect .leftBottom,
+.cropRect .rightBottom {
+    position: absolute;
+    z-index: 1;
+}
+
+.cropRect {
+    cursor: crosshair;
+    left: 131px;
+    top: 87px;
+    width: 542px;
+    height: 407px;
+    position: absolute;
+}
+
+.cropRect .content {
+    width: 100%;
+    height: 100%;
+    cursor: move;
+    background-color: transparent;
+    border: none;
+}
+
+.cropRect {
+    display: block;
+}
+
+/* Size */
+.cropRect .left,
+.cropRect .right {
+    height: 100%;
+    width: 12px;
+}
+
+.cropRect .top,
+.cropRect .bottom {
+    height: 12px;
+    width: 100%;
+}
+
+.cropRect .leftTop, 
+.cropRect .rightTop, 
+.cropRect .leftBottom, 
+.cropRect .rightBottom {
+    height: 20px;
+    width: 20px;
+}
+
+/* Position */
+.cropRect .top {
+    top: -4px;
+    border-top: 1px solid #0bb;
+}
+
+.cropRect .leftTop,
+.cropRect .rightTop {
+    top: -6px;
+}
+
+.cropRect .bottom {
+    bottom: -4px;
+    border-bottom: 1px solid #0bb;
+}
+
+.cropRect .leftBottom,
+.cropRect .rightBottom {
+    bottom: -6px;
+}
+
+.cropRect .left {
+    left: -4px;
+    border-left: 1px solid #0bb;
+}
+
+.cropRect .leftTop,
+.cropRect .leftBottom {
+    left: -6px;
+}
+
+.cropRect .right {
+    right: -1px;
+    border-right: 1px solid #0bb;
+}
+
+.cropRect .rightTop,
+.cropRect .rightBottom {
+    right: -3px;
+}
+
+/* Styles */
+.cropRect .leftTop,
+.cropRect .rightTop {
+    border-top:  6px solid #0bb;
+}
+
+.cropRect .leftBottom,
+.cropRect .rightBottom {
+    border-bottom: 6px solid #0bb;
+}
+
+.cropRect .leftTop,
+.cropRect .leftBottom {
+    border-left: 6px solid #0bb;
+}
+
+.cropRect .rightTop,
+.cropRect .rightBottom {
+    border-right: 6px solid #0bb;
+}
+
+/* Mouse cursors */
+.cropRect .left {
+    cursor: w-resize;
+}
+
+.cropRect .right {
+    cursor: e-resize;
+}
+
+.cropRect .top {
+    cursor: n-resize;
+}
+
+.cropRect .bottom {
+    cursor: s-resize;
+}
+
+.cropRect .leftTop {
+    cursor: nw-resize;
+}
+
+.cropRect .rightTop {
+    cursor: ne-resize;
+}
+
+.cropRect .leftBottom {
+    cursor: sw-resize;
+}
+
+.cropRect .rightBottom {
+    cursor: se-resize;
+}
+
+/* Animations */
+@-webkit-keyframes expandCropBox  {
+    from {
+        width: 30%;
+        height: 30%;
+        left: 35%;
+        top: 35%;
+    }
+    to {
+        width: 70%;
+        height: 70%;
+        left: 15%;
+        top: 15%;
+    }
+}
+
+@-moz-keyframes expandCropBox {
+    from {
+        width: 30%;
+        height: 30%;
+        left: 35%;
+        top: 35%;
+    }
+    to {
+        width: 70%;
+        height: 70%;
+        left: 15%;
+        top: 15%;
+    }
+}
+
+@-ms-keyframes expandCropBox {
+    from {
+        width: 30%;
+        height: 30%;
+        left: 35%;
+        top: 35%;
+    }
+    to {
+        width: 70%;
+        height: 70%;
+        left: 15%;
+        top: 15%;
+    }
+}
+
+@-o-keyframes expandCropBox {
+    from {
+        width: 30%;
+        height: 30%;
+        left: 35%;
+        top: 35%;
+    }
+    to {
+        width: 70%;
+        height: 70%;
+        left: 15%;
+        top: 15%;
+    }
+}
+
+@keyframes expandCropBox {
+    from {
+        width: 30%;
+        height: 30%;
+        left: 35%;
+        top: 35%;
+    }
+    to {
+        width: 70%;
+        height: 70%;
+        left: 15%;
+        top: 15%;
+    }
+}
+
+@-webkit-keyframes showCropBoxContent  {
+    from {
+        background-color: @b-MultimediaCropBoxBorderColor;
+    }
+    to {
+        background-color: @b-MultimediaCropBoxContentBackgroundColor;
+    }
+}
+
+@-moz-keyframes showCropBoxContent {
+    from {
+        background-color: @b-MultimediaCropBoxBorderColor;
+    }
+    to {
+        background-color: @b-MultimediaCropBoxContentBackgroundColor;
+    }
+}
+
+@-ms-keyframes showCropBoxContent {
+    from {
+        background-color: @b-MultimediaCropBoxBorderColor;
+    }
+    to {
+        background-color: @b-MultimediaCropBoxContentBackgroundColor;
+    }
+}
+
+@-o-keyframes showCropBoxContent {
+    from {
+        background-color: @b-MultimediaCropBoxBorderColor;
+    }
+    to {
+        background-color: @b-MultimediaCropBoxContentBackgroundColor;
+    }
+}
+
+@keyframes showCropBoxContent {
+    from {
+        background-color: @b-MultimediaCropBoxBorderColor;
+    }
+    to {
+        background-color: @b-MultimediaCropBoxContentBackgroundColor;
+    }
+}
+
+@-webkit-keyframes fadeHint  {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeHint {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeHint {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeHint {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeHint {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
